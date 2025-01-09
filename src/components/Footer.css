@@ -1,0 +1,23 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+.social-links > * {
+  color: white;
+  font-size: x-large;
+}
+.social-links > *:hover {
+  color: black;
+}
