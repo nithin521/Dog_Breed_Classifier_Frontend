@@ -47,7 +47,7 @@ const Upload = () => {
     formData.append("file", file);
 
     try {
-      const response = await fetch("https://dog-breed-classifier-backend.onrender.com/predict", {
+      const response = await fetch("https://nithin521-dog-breed-classification.hf.space/predict", {
       method: "POST",
       body: formData, 
       cors:"cors"
