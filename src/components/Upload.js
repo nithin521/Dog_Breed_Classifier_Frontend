@@ -27,9 +27,9 @@ const Upload = () => {
     const files = event.dataTransfer.files;
     if (files.length > 0) {
       const imageUrl = URL.createObjectURL(files[0]);
-      setImage(imageUrl); // Set the image URL for preview
-      setUploaded(true); // Mark as uploaded
-      await sendImageToBackend(files[0]); // Send the image to the backend
+      setImage(imageUrl);
+      setUploaded(true); 
+      await sendImageToBackend(files[0]); 
     }
   };
 
@@ -47,15 +47,19 @@ const Upload = () => {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:5000/predict", {
-        method: "POST",
-        body: formData,
+      const response = await fetch("https://dog-breed-classifier-backend.onrender.com/predict", {
+      method: "POST",
+      body: formData,
+      mode: "cors", 
+      headers: {
+        "Accept": "application/json",
+        },
       });
+
 
       if (!response.ok) {
         throw new Error("Failed to fetch breed information");
       }
-
       const data = await response.json();
       console.log(data);
       setBreedInfo(data); // Store the breed prediction results
