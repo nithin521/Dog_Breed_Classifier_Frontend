@@ -50,13 +50,13 @@ const Upload = () => {
       const response = await fetch("https://dog-breed-classifier-backend.onrender.com/predict", {
       method: "POST",
       body: formData, 
-      cors:"no-cors"
+      cors:"cors"
       headers: {
         "Accept": "application/json",
         },
       });
 
-
+      console.log(response)
       if (!response.ok) {
         throw new Error("Failed to fetch breed information");
       }
