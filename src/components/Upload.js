@@ -50,6 +50,7 @@ const Upload = () => {
       const response = await fetch("https://dog-breed-classifier-backend.onrender.com/predict", {
       method: "POST",
       body: formData, 
+      cors:"no-cors"
       headers: {
         "Accept": "application/json",
         },
