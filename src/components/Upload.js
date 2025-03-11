@@ -98,12 +98,12 @@ const Upload = () => {
         <img
           src={image}
           alt="Uploaded Preview"
-          style={{ marginTop: "20px", maxWidth: "100%", height: "auto" }}
+          style={{ marginTop: "20px", maxWidth: "350px", height: "350px" }}
         />
       )}
+      <h3>Prediction Results:</h3>
       {breedInfo && (
         <div className="breed-info">
-          <h3>Prediction Results:</h3>
           {breedInfo.breed.charAt(0).toUpperCase() + breedInfo.breed.slice(1)}
         </div>
       )}
