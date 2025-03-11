@@ -2,7 +2,7 @@
 This is the frontend for the Dog Breed Classifier, a web application that allows users to upload an image of a dog and get its breed prediction using an AI-powered model. The frontend is built using React.js, providing a user-friendly and responsive interface.
 
 # Small peek into our application 
-![Alt Text](https://ibb.co/t0skRbc)
+![Alt Text](result.png)
 
 # Features
 ✅ Upload an image of a dog
