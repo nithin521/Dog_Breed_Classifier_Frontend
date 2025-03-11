@@ -18,15 +18,21 @@ File Upload Handling
 # 📦 Setup & Installation
 
 1️⃣ Clone the repository:
+```
 git clone https://github.com/yourusername/Dog_Breed_Classifier_Frontend.git
 cd Dog_Breed_Classifier_Frontend
-
+```
 2️⃣ Install dependencies:
+```
 npm install
+```
 
 3️⃣ Start the development server:
+```
 npm start
+```
 
 4️⃣ Open in browser:
+```
 http://localhost:3000
-
+```
