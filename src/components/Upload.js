@@ -50,7 +50,7 @@ const Upload = () => {
       const response = await fetch("https://nithin521-dog-breed-classification.hf.space/predict", {
       method: "POST",
       body: formData, 
-      cors:"cors"
+      cors:"cors",
       headers: {
         "Accept": "application/json",
         },
